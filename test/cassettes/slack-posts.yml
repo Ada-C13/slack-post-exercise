@@ -1,0 +1,351 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://slack.com/api/chat.postMessage
+    body:
+      encoding: UTF-8
+      string: token=SLACK_TOKEN&channel=general&text=Hello%20from%20HTTParty%21
+    headers:
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Date:
+      - Wed, 11 Mar 2020 18:12:09 GMT
+      Server:
+      - Apache
+      X-Slack-Req-Id:
+      - 4b79a448899f33f5bea9456ebe293e0e
+      Referrer-Policy:
+      - no-referrer
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      Access-Control-Allow-Headers:
+      - slack-route, x-slack-version-ts, x-b3-traceid, x-b3-spanid, x-b3-parentspanid,
+        x-b3-sampled, x-b3-flags
+      Vary:
+      - Accept-Encoding
+      X-Accepted-Oauth-Scopes:
+      - chat:write:bot
+      X-Slack-Backend:
+      - h
+      Access-Control-Expose-Headers:
+      - x-slack-req-id, retry-after
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - '0'
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Via:
+      - haproxy-www-qgdw
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 7514e5e25722778fd4b1744d4ecc67e1.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - SEA19-C1
+      X-Amz-Cf-Id:
+      - nq01NMPSXd6daHPhDNRvh2GNr43bZeTAcTLi1NNruhuhED_f7HVLeA==
+    body:
+      encoding: UTF-8
+      string: '{"ok":false,"error":"not_authed","warning":"missing_charset","response_metadata":{"warnings":["missing_charset"]}}'
+    http_version: null
+  recorded_at: Wed, 11 Mar 2020 18:12:09 GMT
+- request:
+    method: post
+    uri: https://slack.com/api//chat.postMessage
+    body:
+      encoding: UTF-8
+      string: token=SLACK_TOKEN&channel=general&text=Hello%20from%20HTTParty%21
+    headers:
+      Content-Type:
+      - application/x-www-form-urlencoded
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Date:
+      - Wed, 11 Mar 2020 18:22:44 GMT
+      Server:
+      - Apache
+      X-Slack-Req-Id:
+      - cf339051d472530b30e04a349a6ed393
+      X-Oauth-Scopes:
+      - chat:write,channels:read,users:read
+      X-Accepted-Oauth-Scopes:
+      - chat:write
+      Access-Control-Expose-Headers:
+      - x-slack-req-id, retry-after
+      X-Slack-Backend:
+      - h
+      X-Content-Type-Options:
+      - nosniff
+      Expires:
+      - Mon, 26 Jul 1997 05:00:00 GMT
+      Cache-Control:
+      - private, no-cache, no-store, must-revalidate
+      X-Xss-Protection:
+      - '0'
+      Vary:
+      - Accept-Encoding
+      Pragma:
+      - no-cache
+      Access-Control-Allow-Headers:
+      - slack-route, x-slack-version-ts, x-b3-traceid, x-b3-spanid, x-b3-parentspanid,
+        x-b3-sampled, x-b3-flags
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      Referrer-Policy:
+      - no-referrer
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Via:
+      - haproxy-www-2uu3
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 aa623e134417515bd2496cb01d5e5626.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - SEA19-C1
+      X-Amz-Cf-Id:
+      - Bj-zlvBwPQZqkDbJea47G7rGqmVNW6V3hoauV-VM5AGk076RppDNEQ==
+    body:
+      encoding: UTF-8
+      string: '{"ok":true,"channel":"CRBE2AC5A","ts":"1583950964.110000","message":{"bot_id":"BV8GE55FZ","type":"message","text":"Hello
+        from HTTParty!","user":"UUTSNS9QS","ts":"1583950964.110000","team":"TQZ4GS0GJ","bot_profile":{"id":"BV8GE55FZ","deleted":false,"name":"Post
+        Request Tester","updated":1583891052,"app_id":"AUWHXK2RX","icons":{"image_36":"https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/bot_36.png","image_48":"https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/bot_48.png","image_72":"https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/service_72.png"},"team_id":"TQZ4GS0GJ"}}}'
+    http_version: null
+  recorded_at: Wed, 11 Mar 2020 18:22:45 GMT
+- request:
+    method: post
+    uri: https://slack.com/api//chat.postMessage
+    body:
+      encoding: UTF-8
+      string: token=SLACK_TOKEN&channel=YOUR-CHANNEL-NAME&text=Hey%20I%20can%20post%20messages%21
+    headers:
+      Content-Type:
+      - application/x-www-form-urlencoded
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Date:
+      - Wed, 11 Mar 2020 18:23:52 GMT
+      Server:
+      - Apache
+      X-Slack-Req-Id:
+      - 95527ee1035fd5e632fbed7d2611290a
+      X-Oauth-Scopes:
+      - chat:write,channels:read,users:read
+      X-Accepted-Oauth-Scopes:
+      - chat:write
+      Access-Control-Expose-Headers:
+      - x-slack-req-id, retry-after
+      X-Slack-Backend:
+      - r
+      X-Content-Type-Options:
+      - nosniff
+      Expires:
+      - Mon, 26 Jul 1997 05:00:00 GMT
+      Cache-Control:
+      - private, no-cache, no-store, must-revalidate
+      X-Xss-Protection:
+      - '0'
+      Vary:
+      - Accept-Encoding
+      Pragma:
+      - no-cache
+      Access-Control-Allow-Headers:
+      - slack-route, x-slack-version-ts, x-b3-traceid, x-b3-spanid, x-b3-parentspanid,
+        x-b3-sampled, x-b3-flags
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      Referrer-Policy:
+      - no-referrer
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Via:
+      - haproxy-www-nxpy
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 42ef990e439ae115ff739f04e3945234.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - SEA19-C1
+      X-Amz-Cf-Id:
+      - bLcdU2lU029vq4NSapwLfmKHfstNUYlTwiarllNinq37L6ouDm5Mbw==
+    body:
+      encoding: UTF-8
+      string: '{"ok":false,"error":"channel_not_found"}'
+    http_version: null
+  recorded_at: Wed, 11 Mar 2020 18:23:52 GMT
+- request:
+    method: post
+    uri: https://slack.com/api//chat.postMessage
+    body:
+      encoding: UTF-8
+      string: token=SLACK_TOKEN&channel=general&text=Hey%20I%20can%20post%20messages%21
+    headers:
+      Content-Type:
+      - application/x-www-form-urlencoded
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Date:
+      - Wed, 11 Mar 2020 18:24:49 GMT
+      Server:
+      - Apache
+      X-Slack-Req-Id:
+      - fc1b5000c637a80bed15570cb4c76ba7
+      X-Oauth-Scopes:
+      - chat:write,channels:read,users:read
+      X-Accepted-Oauth-Scopes:
+      - chat:write
+      Access-Control-Expose-Headers:
+      - x-slack-req-id, retry-after
+      X-Slack-Backend:
+      - h
+      X-Content-Type-Options:
+      - nosniff
+      Expires:
+      - Mon, 26 Jul 1997 05:00:00 GMT
+      Cache-Control:
+      - private, no-cache, no-store, must-revalidate
+      X-Xss-Protection:
+      - '0'
+      Vary:
+      - Accept-Encoding
+      Pragma:
+      - no-cache
+      Access-Control-Allow-Headers:
+      - slack-route, x-slack-version-ts, x-b3-traceid, x-b3-spanid, x-b3-parentspanid,
+        x-b3-sampled, x-b3-flags
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      Referrer-Policy:
+      - no-referrer
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Via:
+      - haproxy-www-uu0c
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 786d821259e050ebca76b8e357819f78.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - SEA19-C1
+      X-Amz-Cf-Id:
+      - ZEam5OChejhoUz1f8SY_DOy93Bn0JlE1yuyGldrK3uwnGFe8ptowtg==
+    body:
+      encoding: UTF-8
+      string: '{"ok":true,"channel":"CRBE2AC5A","ts":"1583951089.110300","message":{"bot_id":"BV8GE55FZ","type":"message","text":"Hey
+        I can post messages!","user":"UUTSNS9QS","ts":"1583951089.110300","team":"TQZ4GS0GJ","bot_profile":{"id":"BV8GE55FZ","deleted":false,"name":"Post
+        Request Tester","updated":1583891052,"app_id":"AUWHXK2RX","icons":{"image_36":"https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/bot_36.png","image_48":"https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/bot_48.png","image_72":"https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/service_72.png"},"team_id":"TQZ4GS0GJ"}}}'
+    http_version: null
+  recorded_at: Wed, 11 Mar 2020 18:24:49 GMT
+- request:
+    method: post
+    uri: https://slack.com/api/chat.postMessage?channel=general&text=Hey%20I%20can%20post%20messages!&token=SLACK_TOKEN
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Content-Type:
+      - application/x-www-form-urlencoded
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Date:
+      - Wed, 11 Mar 2020 18:29:11 GMT
+      Server:
+      - Apache
+      X-Slack-Req-Id:
+      - 50c32d89cddbc44a04724a7e2c8bd0d0
+      X-Oauth-Scopes:
+      - chat:write,channels:read,users:read
+      X-Accepted-Oauth-Scopes:
+      - chat:write
+      Access-Control-Expose-Headers:
+      - x-slack-req-id, retry-after
+      X-Slack-Backend:
+      - h
+      X-Content-Type-Options:
+      - nosniff
+      Expires:
+      - Mon, 26 Jul 1997 05:00:00 GMT
+      Cache-Control:
+      - private, no-cache, no-store, must-revalidate
+      X-Xss-Protection:
+      - '0'
+      Vary:
+      - Accept-Encoding
+      Pragma:
+      - no-cache
+      Access-Control-Allow-Headers:
+      - slack-route, x-slack-version-ts, x-b3-traceid, x-b3-spanid, x-b3-parentspanid,
+        x-b3-sampled, x-b3-flags
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      Referrer-Policy:
+      - no-referrer
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Via:
+      - haproxy-www-n3sn
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 599f04a365a179d553682d476509c389.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - SEA19-C1
+      X-Amz-Cf-Id:
+      - d7Xq-w-qh21d_osSZZGMtpkua5HfcbyTCmJICpTqrwyDwGJ6yXgAaw==
+    body:
+      encoding: UTF-8
+      string: '{"ok":true,"channel":"CRBE2AC5A","ts":"1583951351.110500","message":{"bot_id":"BV8GE55FZ","type":"message","text":"Hey
+        I can post messages!","user":"UUTSNS9QS","ts":"1583951351.110500","team":"TQZ4GS0GJ","bot_profile":{"id":"BV8GE55FZ","deleted":false,"name":"Post
+        Request Tester","updated":1583891052,"app_id":"AUWHXK2RX","icons":{"image_36":"https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/bot_36.png","image_48":"https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/bot_48.png","image_72":"https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/service_72.png"},"team_id":"TQZ4GS0GJ"}}}'
+    http_version: null
+  recorded_at: Wed, 11 Mar 2020 18:29:12 GMT
+recorded_with: VCR 5.1.0
